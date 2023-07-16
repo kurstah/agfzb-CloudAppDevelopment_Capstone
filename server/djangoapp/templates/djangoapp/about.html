@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="{% url 'djangoapp:about' %}">About Us</a>
+                <a href="{% url 'djangoapp:contact' %}">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+    <h1>Welcome to Best Cars dealership</h1>
+    <p>
+        Home to the best cars in North America. We sell domestic and imported cars at reasonable prices.
+    </p>
+</body>
+</html>
