@@ -51,5 +51,25 @@
         </div>
     </nav>
     <!-- Add a dealer table here -->
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Dealer Name</th>
+                <th scope="col">City</th>
+                <th scope="col">State</th>
+                <th scope="col">ZIP</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for dealer in dealerships %}
+            <tr>
+                <td>{{ dealer.full_name }}</td>
+                <td>{{ dealer.city }}</td>
+                <td>{{ dealer.st }}</td>
+                <td>{{ dealer.zip }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 </body>
 </html>
